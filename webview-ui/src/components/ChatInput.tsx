@@ -1,5 +1,3 @@
-// webview-ui/src/components/ChatInput.tsx
-
 import React, { useRef, useLayoutEffect } from "react";
 import "./ChatInput.css";
 
@@ -7,7 +5,7 @@ type ChatInputProps = {
   value: string;
   showPicker: boolean;
   filteredFiles: string[];
-  onSendMessage: () => void; // No argument needed, App.tsx has the value
+  onSendMessage: () => void;
   onValueChange: (value: string) => void;
   onFileSelect: (file: string) => void;
 };
@@ -22,7 +20,7 @@ const ChatInput: React.FC<ChatInputProps> = ({
 }) => {
   const textareaRef = useRef<HTMLTextAreaElement>(null);
 
-  // This effect auto-resizes the textarea
+  // This effect will auto-resizes the textarea
   useLayoutEffect(() => {
     const textarea = textareaRef.current;
     if (textarea) {
@@ -45,21 +43,18 @@ const ChatInput: React.FC<ChatInputProps> = ({
       {/* The File Picker UI */}
       {showPicker && (
         <>
-          {console.log("🎯 showPicker is TRUE")}
-          {console.log("🎯 filteredFiles count:", filteredFiles.length)}
         <div className="file-picker">
             {filteredFiles.length > 0 ? (
               filteredFiles
-              .slice(0, 10) // Show a max of 10 files
+              .slice(0, 15)
               .map((file) => (
                 <div
-                key={file}
-                className="file-item"
-                // Use onMouseDown to fire before the textarea loses focus
-                onMouseDown={() => onFileSelect(file)}
+                  key={file}
+                  className="file-item"
+                  onMouseDown={() => onFileSelect(file)}
                 >
-                    {file}
-                  </div>
+                  {file}
+                </div>
                 ))
               ) : (
                 <div className="file-item-empty">No matching files found</div>

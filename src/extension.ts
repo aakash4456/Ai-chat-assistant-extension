@@ -1,5 +1,3 @@
-// src/extension.ts
-
 import * as vscode from "vscode";
 import * as path from "path";
 import * as fs from "fs";
@@ -89,7 +87,7 @@ class ChatPanel {
               );
               return;
             }
-            // variabke to holds User inputed prompt and file if attaced.
+            // variable to holds User inputed prompt and file if attached.
             let prompt = message.payload.text;
             const attachedFiles = message.payload.attachedFiles || [];
 
@@ -144,7 +142,7 @@ class ChatPanel {
             return;
           }
           
-          // --- THIS IS THE NEW CASE, ADDED HERE ---
+          // Case to pick a file from User Input
           case "getWorkspaceFiles": {
             console.log(" getWorkspaceFiles command received from WebView");
             // we can avoid node Modules file by : '**/node_modules/**'

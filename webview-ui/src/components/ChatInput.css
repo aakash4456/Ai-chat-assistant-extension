@@ -1,4 +1,4 @@
-/* webview-ui/src/components/ChatInput.css */
+/* Input Box css */
 
 .chat-input-container {
   position: relative; 
@@ -15,11 +15,11 @@
   border: 1px solid var(--vscode-input-border);
   border-radius: 4px;
   padding: 8px;
-  resize: none; /* Disables manual resizing by the user */
+  resize: none;
   margin-right: 10px;
   font-family: var(--vscode-font-family);
   font-size: var(--vscode-font-size);
-  max-height: 150px; /* Add this line */
+  max-height: 150px;
   overflow-y: auto;
 }
 
@@ -42,8 +42,7 @@
   background-color: var(--vscode-button-hoverBackground);
 }
 
-
-/* ADD THIS TO webview-ui/src/components/ChatInput.css */
+/* File Picker css */
 
 .file-picker {
   border: 2px dashed red;

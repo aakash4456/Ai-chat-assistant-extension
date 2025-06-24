@@ -1,10 +1,8 @@
-// webview-ui/src/components/ChatHistory.tsx
-
 import React from "react";
 import Message from "./Message";
 import "./ChatHistory.css";
 
-// Define the structure of a message object
+// Structure of a message object
 export type ChatMessage = {
   text: string;
   sender: "user" | "ai";

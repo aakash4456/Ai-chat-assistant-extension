@@ -1,12 +1,11 @@
-/* webview-ui/src/components/Message.css */
-
+/* message box */
 .message {
   display: flex;
   margin: 10px 0;
 }
 
 .message-content {
-  padding: 10px 15px;
+  padding: 0px 15px;
   border-radius: 18px;
   max-width: 80%;
   word-wrap: break-word;
@@ -18,7 +17,7 @@
 }
 
 .message.ai .message-content {
-  background-color: var(--vscode-editorWidget-background);
+  background-color: rgba(34, 6, 9, 0.1);
   color: var(--vscode-editorWidget-foreground);
   border: 1px solid var(--vscode-editorWidget-border);
 }

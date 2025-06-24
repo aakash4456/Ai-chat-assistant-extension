@@ -1,4 +1,3 @@
-// webview-ui/src/components/LoadingIndicator.tsx
 import React from "react";
 import "./LoadingIndicator.css";
 
