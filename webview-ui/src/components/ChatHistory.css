@@ -1,0 +1,9 @@
+/* webview-ui/src/components/ChatHistory.css */
+
+.chat-history {
+  flex-grow: 1; /* Allows this component to fill the available space */
+  overflow-y: auto; /* Adds a scrollbar when content overflows */
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}

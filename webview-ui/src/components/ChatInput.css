@@ -1,0 +1,82 @@
+/* webview-ui/src/components/ChatInput.css */
+
+.chat-input-container {
+  position: relative; 
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid var(--vscode-editorWidget-border);
+  background-color: var(--vscode-editor-background);
+}
+
+.chat-input {
+  flex-grow: 1;
+  background-color: var(--vscode-input-background);
+  color: var(--vscode-input-foreground);
+  border: 1px solid var(--vscode-input-border);
+  border-radius: 4px;
+  padding: 8px;
+  resize: none; /* Disables manual resizing by the user */
+  margin-right: 10px;
+  font-family: var(--vscode-font-family);
+  font-size: var(--vscode-font-size);
+  max-height: 150px; /* Add this line */
+  overflow-y: auto;
+}
+
+.chat-input:focus {
+  outline: 1px solid var(--vscode-focusBorder);
+  border-color: var(--vscode-focusBorder);
+}
+
+.send-button {
+  background-color: var(--vscode-button-background);
+  color: var(--vscode-button-foreground);
+  border: none;
+  border-radius: 4px;
+  padding: 8px 15px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.send-button:hover {
+  background-color: var(--vscode-button-hoverBackground);
+}
+
+
+/* ADD THIS TO webview-ui/src/components/ChatInput.css */
+
+.file-picker {
+  border: 2px dashed red;
+  position: absolute;
+  bottom: 100%; /* Position it above the input area */
+  left: 0;
+  right: 0;
+  background-color: var(--vscode-editorWidget-background);
+  border: 1px solid var(--vscode-editorWidget-border);
+  border-bottom: none; /* No bottom border as it sits on top of the input */
+  border-radius: 4px 4px 0 0;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.file-item, .file-item-empty {
+  padding: 8px 12px;
+  cursor: pointer;
+  border-bottom: 1px solid var(--vscode-editorWidget-border);
+  font-size: 13px;
+}
+
+.file-item:last-child {
+  border-bottom: none;
+}
+
+.file-item:hover {
+  background-color: var(--vscode-list-hoverBackground);
+}
+
+.file-item-empty {
+    cursor: default;
+    color: var(--vscode-descriptionForeground);
+}

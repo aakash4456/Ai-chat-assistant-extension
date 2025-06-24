@@ -1,0 +1,34 @@
+/* webview-ui/src/components/Message.css */
+
+.message {
+  display: flex;
+  margin: 10px 0;
+}
+
+.message-content {
+  padding: 10px 15px;
+  border-radius: 18px;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+/* AI message styles */
+.message.ai {
+  justify-content: flex-start;
+}
+
+.message.ai .message-content {
+  background-color: var(--vscode-editorWidget-background);
+  color: var(--vscode-editorWidget-foreground);
+  border: 1px solid var(--vscode-editorWidget-border);
+}
+
+/* User message styles */
+.message.user {
+  justify-content: flex-end;
+}
+
+.message.user .message-content {
+  background-color: var(--vscode-button-background);
+  color: var(--vscode-button-foreground);
+}

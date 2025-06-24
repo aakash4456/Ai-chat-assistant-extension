@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "ES2020", // Updated target for modern Node.js versions in VS Code
+    "outDir": "out",
+    "lib": ["ES2020"],
+    "sourceMap": true,
+    "rootDir": "src",
+    "strict": true
+    /* You can add other options here if needed */
+  },
+  // --- ADD THE LINES BELOW ---
+  // This is the crucial part. It tells TypeScript to ONLY compile files
+  // within the 'src' directory for the extension's backend.
+  "include": ["src"],
+  // This explicitly excludes the node_modules folder, which is good practice.
+  "exclude": ["node_modules", ".vscode-test"]
+}
