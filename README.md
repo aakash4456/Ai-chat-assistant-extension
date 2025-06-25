@@ -26,7 +26,7 @@ An intelligent coding companion powered by Google Gemini, living directly inside
 
 ## Extension Preview
 
-<!-- ![Extension Preview](images/screenshot.png) -->
+![Extension Preview](images/screenshot.png)
 ---
 
 ## Features
