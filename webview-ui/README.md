@@ -1,54 +1,56 @@
-# React + TypeScript + Vite
+# AI Chat Assistant - WebView UI (Frontend)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project contains the React-based frontend user interface for the AI Chat Assistant VS Code extension. It runs inside a VS Code WebView.
 
-Currently, two official plugins are available:
+## Prerequisites
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Node.js](https://nodejs.org/) (v18 or above recommended)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+1.  **Clone the main repository (if you haven't already):**
+    ```bash
+    git clone https://github.com/aakash4456/Ai-chat-assistant-extension.git
+    ```
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+2.  **Navigate to the frontend directory:**
+    ```bash
+    cd Ai-chat-assistant-extension/webview-ui
+    ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+3.  **Install dependencies:**
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+4.  **Start the development server:**
+    ```bash
+    npm run dev
+    # or
+    yarn dev
+    ```
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+5.  **Open your browser:**
+    Visit [http://localhost:5173](http://localhost:5173) to view the app.
+
+## Project Structure
+
+-   `src/`
+    -   `components/`
+    -   `App.tsx`
+    -   `main.tsx`
+-   `public/`
+-   `vite.config.ts`
+
+## Available Scripts
+
+-   `npm run dev` - Starts the Vite development server for live reloading.
+-   `npm run build` - Bundles the application for production. This is the command the VS Code extension uses to get the final UI files.
+
+## Additional Information
+
+-   **Important:** This frontend is designed to run within a VS Code WebView. When you run `npm run dev`, features that communicate with the extension (like file picking with `@`) will not work, as they depend on the VS Code API backend. The dev server is primarily for UI development and styling.
+-   To test the full, integrated functionality, you must run the extension from the root directory using the `F5` debugger in VS Code.

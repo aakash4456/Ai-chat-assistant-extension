@@ -145,7 +145,7 @@ Follow these steps to get the extension running in a development environment.
 
 ## Setup and Installation from VS Code Marketplace
 
-1.  **Install the Extension:** Find **"AI Chat Assistant"** on the [VS Code Marketplace](https://marketplace.visualstudio.com/).
+1.  **Install the Extension:** [Click me](https://marketplace.visualstudio.com/items?itemName=aakashPalBhu.ai-chat-assistant&ssr=false#overview) or Find **"AI Chat Assistant"** on the [VS Code Marketplace](https://marketplace.visualstudio.com/).
 2.  **Get a Google Gemini API Key:**
     *   You must have a valid API key from Google AI Studio.
     *   Visit [aistudio.google.com/apikey](https://aistudio.google.com/apikey) to create one.
