@@ -1,14 +1,20 @@
 {
-  "name": "Ai-chat-assistant",
+  "name": "ai-chat-assistant",
   "displayName": "AI Chat Assistant",
-  "description": "An AI assistant with file context awareness.",
-  "version": "0.0.1",
+  "description": "An AI assistant with file context awareness. Chat with your code!",
+  "version": "1.0.0",
+  "publisher": "aakashPalBhu",
   "engines": {
     "vscode": "^1.85.0"
   },
   "categories": [
     "Other"
   ],
+  "icon": "images/icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aakash4456/Ai-chat-assistant-extension"
+  },
   "activationEvents": [
     "onCommand:ai-chat-assistant.start",
     "onCommand:ai-chat-assistant.setApiKey"

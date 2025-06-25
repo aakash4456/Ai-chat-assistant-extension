@@ -19,7 +19,8 @@
   margin-right: 10px;
   font-family: var(--vscode-font-family);
   font-size: var(--vscode-font-size);
-  max-height: 150px;
+  min-height: 40px;
+  max-height: 40vh;
   overflow-y: auto;
 }
 

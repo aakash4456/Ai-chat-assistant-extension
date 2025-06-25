@@ -65,6 +65,7 @@ const ChatInput: React.FC<ChatInputProps> = ({
 
       {/* The Text Input Area */}
       <textarea
+        ref={textareaRef}
         className="chat-input"
         placeholder="Ask a question or type @ to attach a file..."
         value={value}
