@@ -26,16 +26,17 @@ An intelligent coding companion powered by Google Gemini, living directly inside
 
 ## Extension Preview
 
-![Extension Preview](images/screenshot.png)
+<!-- ![Extension Preview](images/screenshot.png) -->
 ---
 
 ## Features
 
-*   **Context-Aware Chat:** Attach files to your prompts using `@` mentions (e.g., `Refactor this function in @src/utils.js`). The assistant reads the file content to give you precise, relevant answers.
-*   **AI-Powered Code Generation:** Leverage the power of Google's Gemini 1.5 Flash model to generate new code, from simple functions to entire components.
-*   **Richly Formatted Responses:** AI responses are beautifully rendered with full markdown support and syntax-highlighted code blocks, making them easy to read and use.
-*   **Secure by Design:** Your Google Gemini API key is stored securely on your local machine using VS Code's native `SecretStorage` and is never shared or exposed.
-*   **Modern UI:** A clean, minimal, and responsive chat interface built with React, running inside a VS Code WebView.
+*   **Context-Aware Chat:** Attach files to your prompts using `@` mentions (e.g., `Refactor this function in @src/utils.js`) — the assistant reads and uses their content to improve response accuracy.
+*   **AI-Powered Code Generation:** Powered by Google’s **Gemini 1.5 Flash** model for smart, contextual code suggestions.
+*   **Markdown + Syntax Highlighting** AI responses support markdown and highlight code for better readability.
+*   **Secure by Design:** Your API key is stored safely using VS Code's built-in **SecretStorage** — never exposed or shared.
+*   **Modern UI:** Clean React-based chat interface embedded directly inside VS Code.
+
 ---
 
 ## Tech Stack
