@@ -2,7 +2,7 @@
   "name": "ai-chat-assistant",
   "displayName": "AI Chat Assistant",
   "description": "An AI assistant with file context awareness. Chat with your code!",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "publisher": "aakashPalBhu",
   "engines": {
     "vscode": "^1.85.0"

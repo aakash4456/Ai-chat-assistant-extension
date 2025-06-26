@@ -1,6 +1,6 @@
-# AI Chat Assistant for VS Code
+# AI Chat Assistant - VS Code Extension
 
-[![Version](https://img.shields.io/badge/Version-1.0.1-blue.svg)](https://marketplace.visualstudio.com/)
+[![Version](https://img.shields.io/badge/Version-1.0.3-blue.svg)](https://marketplace.visualstudio.com/)
 [![Publisher](https://img.shields.io/badge/Publisher-aakash4456-purple.svg)](https://marketplace.visualstudio.com/items?itemName=aakashPalBhu.ai-chat-assistant)
 
 An intelligent coding companion powered by Google Gemini, living directly inside your Visual Studio Code editor. This extension provides a powerful, React-based chat interface that is context-aware of your workspace. Ask questions about your code, generate new snippets, and get help without ever leaving your development environment.
@@ -188,8 +188,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ---
 
----
-
 ## Contact Information
 
 - **Phone Number:** +91-6397185887
@@ -197,3 +195,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 - **Email:** aakash4456bhu@gmail.com
 - **LinkedIn:** [aakash4456](https://www.linkedin.com/in/aakash4456/)
 
+---

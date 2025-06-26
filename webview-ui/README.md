@@ -1,4 +1,5 @@
-# AI Chat Assistant - WebView UI (Frontend)
+# AI Chat Assistant - VS Code Extension
+## WebView UI (Frontend)
 
 This project contains the React-based frontend user interface for the AI Chat Assistant VS Code extension. It runs inside a VS Code WebView.
 
