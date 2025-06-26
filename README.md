@@ -2,6 +2,7 @@
 
 [![Version](https://img.shields.io/badge/Version-1.0.3-blue.svg)](https://marketplace.visualstudio.com/)
 [![Publisher](https://img.shields.io/badge/Publisher-aakash4456-purple.svg)](https://marketplace.visualstudio.com/items?itemName=aakashPalBhu.ai-chat-assistant)
+[![Install](https://img.shields.io/badge/GoTo-Install-088529.svg)](https://marketplace.visualstudio.com/items?itemName=aakashPalBhu.ai-chat-assistant)
 
 An intelligent coding companion powered by Google Gemini, living directly inside your Visual Studio Code editor. This extension provides a powerful, React-based chat interface that is context-aware of your workspace. Ask questions about your code, generate new snippets, and get help without ever leaving your development environment.
 
