@@ -22,15 +22,12 @@ An intelligent coding companion powered by Google Gemini, living directly inside
 - [How to Use](#how-to-use)
 - [Contributing](#contributing)
 - [License](#license)
+- [Contact Information](#contact-information)
 ---
 
 ## Extension Preview
 
-<<<<<<< HEAD
 ![Extension Preview](images/Panel_View.png)
-=======
-![Extension Preview](images/screenshot.png)
->>>>>>> e9d27caec8ca06f6e92bdcdd51640c75463baebf
 ---
 
 ## Features
@@ -190,3 +187,13 @@ Follow these steps to get the extension running in a development environment.
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
+
+---
+
+## Contact Information
+
+- **Phone Number:** +91-6397185887
+- **GitHub ID:** [aakash4456](https://github.com/aakash4456)
+- **Email:** aakash4456bhu@gmail.com
+- **LinkedIn:** [aakash4456](https://www.linkedin.com/in/aakash4456/)
+
