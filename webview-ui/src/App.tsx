@@ -70,7 +70,7 @@ function App() {
     setShowFilePicker(false);
   };
 
-  // --- EFFECT TO LISTEN FOR MESSAGES FROM THE EXTENSION ---
+  // Effect to update workspacefiles
   useEffect(() => {
     const handleMessage = (event: MessageEvent) => {
       console.log("React received message from extension:", event.data);

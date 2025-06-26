@@ -1,4 +1,4 @@
-# AI Chat Assistant for VS Code ✨
+# AI Chat Assistant for VS Code
 
 [![Version](https://img.shields.io/badge/Version-1.0.1-blue.svg)](https://marketplace.visualstudio.com/)
 [![Publisher](https://img.shields.io/badge/Publisher-aakash4456-purple.svg)](https://marketplace.visualstudio.com/items?itemName=aakashPalBhu.ai-chat-assistant)
@@ -26,7 +26,7 @@ An intelligent coding companion powered by Google Gemini, living directly inside
 
 ## Extension Preview
 
-<!-- ![Extension Preview](images/screenshot.png) -->
+![Extension Preview](images/Panel_View.png)
 ---
 
 ## Features

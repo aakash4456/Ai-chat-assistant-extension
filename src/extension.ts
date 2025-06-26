@@ -104,9 +104,9 @@ class ChatPanel {
                   const fileContent = await vscode.workspace.fs.readFile(fileUri);
                   const decodedContent = Buffer.from(fileContent).toString('utf8');
 
-                  console.log(fileUri);
-                  console.log(fileContent);
-                  console.log(decodedContent);
+                  console.log('fileUri ', fileUri);
+                  console.log('fileContent ', fileContent);
+                  console.log('decodedContent ', decodedContent);
 
                   contextText += `--- CONTEXT FROM: ${filePath} ---\n\n${decodedContent}\n\n--- END OF CONTEXT ---\n\n`;
                 } catch (error) {
@@ -145,7 +145,6 @@ class ChatPanel {
           // Case to pick a file from User Input
           case "getWorkspaceFiles": {
             console.log(" getWorkspaceFiles command received from WebView");
-            // we can avoid node Modules file by : '**/node_modules/**'
             const files = await vscode.workspace.findFiles('**/*', '**/node_modules/**');
             const filePaths = files.map(file => vscode.workspace.asRelativePath(file));
             // debugging
